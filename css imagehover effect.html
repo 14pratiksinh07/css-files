@@ -1,0 +1,58 @@
+<html>
+<head>
+    <style type="text/css">
+        .container-img {
+            position: relative;
+            width: 300px;
+        }
+
+        .image {
+            display: block;
+            width: 300px;
+            height: 300px;
+            transition: 1s;
+        }
+        .overlay {
+            position:absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            opacity: 0;
+            transition: 1s;
+            z-index: 10;
+            background-color: rgba(0,0,0,7);
+        }
+        .container-img:hover .overlay
+        {
+            opacity: 1;
+        }
+        .container-img:hover .image
+        {
+            transform: rotate(360deg);
+        }
+        .text{
+            color:red;
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align:center ;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <h2>Image overlay effect</h2>
+    <div class="container-img">
+        <img src="image/office image.jpg" alt="demo image 1" class="image">
+        <div class="overlay">
+              <div class="text">Mr.Dhaval Sathwara</div>
+              </div>  
+            </div>
+    
+</body>
+</html>
